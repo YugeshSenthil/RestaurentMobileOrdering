@@ -1,0 +1,186 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'roboto-mono', sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: left;
+    background-image: url('./images/FastFoods.jpg');
+    height: 100px;
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-padding{
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+.menus-inner{
+    position: relative;
+}
+
+.menus{
+    display: flex;
+}
+.order-summary, .thanks-message{
+    display: none;
+}
+.menus, .order-summary, .thanks-message{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.menu, .orders, .total-orders{
+
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+
+}
+
+.menu{
+    padding-bottom: 30px;
+    border-bottom: 1px solid lightgrey;
+}
+
+.order-summary{
+    font-size: 20px;
+}
+
+.orders{
+
+    gap: 10px;
+    padding-bottom: 20px;
+    align-items: center;
+}
+
+.total-orders{
+    padding: 20px 0;
+    border-top: 2px solid black;
+}
+
+.menu-details{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: s;
+    padding: 0 10px;
+
+}
+
+.menu-img{
+    width: 120px;
+    height: 120px;
+    font-size: 90px;
+}
+
+.ingredients, .order-remove{
+    font-size: 14px;
+    color: grey;
+
+}
+
+.order-remove{
+    cursor: pointer;
+}
+
+.cost{
+    font-weight: 500;
+}
+
+.add-item{
+
+    padding: 10px 15px;
+    border: 1px solid lightgrey;
+    border-radius: 50%;
+    height: 20px;
+    margin-top: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.add-item:active{
+    background-color: lightgrey;
+}
+
+.align-right{
+    margin-left: auto;
+}
+
+.order-summary-header{
+    padding: 20px 0;
+}
+
+button{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 20px 150px;
+    border-radius: 5px;
+    background-color: lawngreen;
+    border: none;
+    font-size: 15px;
+    color: white;
+    font-weight: 900;
+}
+
+.payment-details{
+    position: absolute;
+    background-color: white;
+    border: 1px solid black;
+    width: 400px;
+    height: 500px;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin:  auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    border: none;
+    display: none;
+}
+
+.payment-details p{
+    margin: 40px auto;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.payment-details-container{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.payment-details-container input{
+    margin: 10px 0;
+    padding: 15px 15px;
+    font-size: 15px;
+    
+}
+
+
+form,
+.payment-details-container input,
+.payment-details-container button {
+  width: 100%; /* Ensure the form itself fills its parent */
+}
+
+.thanks-message{
+    margin: 40px auto;
+    padding: 25px;
+    color: green;
+    background-color: lightgreen;
+    border: none;
+    width: 350px;
+}

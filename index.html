@@ -1,0 +1,54 @@
+<html>
+    <head>
+         <link rel="stylesheet" href="style.css">
+         <!--Google Fonts-->
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        
+        <title>Restaurent Ordering App</title>    
+    </head>
+    <body>
+        <header>
+            <h2 class="header-padding">Yugesh's Diner</h2>
+            <h3 class="header-padding">Best burgers in town</h3>
+        </header>
+        <main>
+            <div class="menus-inner">
+                <section class="menus" id="menus"> </section>
+                <section class="order-summary" id="order-summary">
+                    <p class="order-summary-header">Your order</p>
+                    <div id="order-list">
+                        
+                    </div>
+                    <div class="total-orders">
+                        <p>Total price:</p>
+                        <p class="align-right" id="total-price">$14</p>
+                    </div>
+                    <button id="complete-order">Complete order</button>
+                </section>
+                <section class="payment-details" id="payment-details">
+                    <div class="payment-details-container">
+                        <p>Enter card details</p>
+                        <form class="payment-form">
+                            <input type="text" required placeholder="Enter your name">
+                            <input type="number" required placeholder="Enter card number">
+                            <input type="number" required placeholder="Enter CVV">
+                        <button id="pay-order" type="submit">Pay</button>
+                        </form>
+                        
+                    </div>
+                </section>
+                <section class="thanks-message" id="thanks-message">
+                    <p>Thanks for buying the order!!!</p>
+                </section>
+            </div>
+            
+
+        </main>
+        <footer>
+
+        </footer>
+        <script src="script.js" type="module"></script>
+    </body>
+</html>
